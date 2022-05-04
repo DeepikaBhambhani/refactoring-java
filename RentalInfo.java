@@ -13,11 +13,11 @@ public class RentalInfo {
     //method returns rental receipt for each customer
     String statement(@NotNull Customer customer) {
 
-        HashMap<String, Movie> movies = new HashMap();
-        movies.put("F001", new Movie("You've Got Mail", MovieCode.REGULAR));
-        movies.put("F002", new Movie("Matrix", MovieCode.REGULAR));
-        movies.put("F003", new Movie("Cars", MovieCode.CHILDREN));
-        movies.put("F004", new Movie("Fast & Furious X", MovieCode.NEW));
+        HashMap<MovieId, Movie> movies = new HashMap();
+        movies.put(MovieId.F001, new Movie("You've Got Mail", MovieCode.REGULAR));
+        movies.put(MovieId.F002, new Movie("Matrix", MovieCode.REGULAR));
+        movies.put(MovieId.F003, new Movie("Cars", MovieCode.CHILDREN));
+        movies.put(MovieId.F004, new Movie("Fast & Furious X", MovieCode.NEW));
 
         double totalAmount = 0.0;
         int frequentEnterPoints = 0;

@@ -3,10 +3,10 @@ import org.jetbrains.annotations.NotNull;
 public class MovieRental {
 
     @NotNull
-    private String movieId;
+    private MovieId movieId;
     private int days;
 
-    public MovieRental(String movieId, int days) {
+    public MovieRental(MovieId movieId, int days) {
         this.movieId = movieId;
         this.days = days;
     }
@@ -14,7 +14,7 @@ public class MovieRental {
     /**
      * @return movieid
      */
-    public String getMovieId() {
+    public MovieId getMovieId() {
         return movieId;
     }
 
